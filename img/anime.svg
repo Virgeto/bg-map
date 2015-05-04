@@ -1,0 +1,14 @@
+<svg width="300px" height="200px" version="1.1" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+ <rect x="2" y="2" width="296" height="196" style="fill:#ffffff;stroke:#cbcbcb" stroke-width="2px"></rect>
+
+ <desc>Пример использования элемента mpath</desc>
+ 
+ <path id="myPath" style="fill:none;stroke:#000000;stroke-width:5px;" d="M 384.28125,257.5625 c -127.29236,0 -230.5,101.9351 -230.5,227.65625 0,125.72115 103.20764,227.65625 230.5,227.65625 127.29235,0 230.5,-101.9351 230.5,-227.65625 0,-125.72115 -103.20765,-227.65625 -230.5,-227.65625 z m 0,1 c 126.75863,0 229.5,101.48234 229.5,226.65625 0,125.17391 -102.74137,226.65625 -229.5,226.65625 -126.75864,0 -229.5,-101.48234 -229.5,-226.65625 0,-125.17391 102.74136,-226.65625 229.5,-226.65625 z"></path>
+ 
+ <circle cx="0" cy="0" r="8" style="fill:red"> 
+  <animateMotion dur="30s" repeatCount="indefinite">
+    <mpath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#myPath"></mpath>
+  </animateMotion>
+ </circle>
+
+</svg>

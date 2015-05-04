@@ -1,0 +1,160 @@
+@font-face{
+    font-family: krasoti;
+    src: url("fonts/Roboto-ThinItalic.ttf");
+}
+body {
+	  font-family: "krasoti";
+}
+.image {
+	width: 200px;
+	margin: 5em auto;
+	display: block;
+	-webkit-filter: sepia(1);
+			filter: sepia(1);
+}
+
+.image:hover {
+	-webkit-filter: none;
+	-webkit-filter: blur(5px);
+	        filter: blur(5px);
+			filter: none;
+}
+.image_1 {
+	width: 200px;
+	margin: 5em auto;
+	display: block;
+}
+
+.image_1:hover { 
+	cursor: pointer;
+ -webkit-filter: hue-rotate(90deg);
+ 		 filter: hue-rotate(90deg);
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+          filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+}
+
+.image_1:active {
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+			filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+
+.img-container {
+	transition: .3s ease;
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-filter: sepia(1);
+			filter: sepia(1);
+}
+
+.img {
+	transition: .3s ease;
+}
+
+.img-container:hover {
+	cursor: pointer;
+	transition: .3s ease;
+	-webkit-filter: sepia(0);
+			filter: sepia(0);
+	box-shadow: 0px 1px 5px 1px #888;
+}
+
+.img-container:hover
+.img {
+	transition: .3s ease-in;
+	-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+}
+
+.text {
+	text-align: center;
+}
+
+.but {
+	display: inline-block;
+	width:150px;
+	padding: .5em;
+	background: #d5171e;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#bgMap {
+	width: 30em;
+	height: 22em;
+}
+.st0{
+	fill:#fff;
+	stroke:#262626;
+	stroke-miterlimit:10;
+}
+
+.st0:hover{
+	cursor:pointer;
+	transition: .3s ease-in;
+	fill:#70F752;
+	stroke: #000;
+	stroke-width: 2px;
+}
+
+.active {
+	fill: #70F752;
+	stroke: #000;
+	stroke-width: 2px;
+}
+
+.inactive {
+	fill: #fff;
+	stroke: #333;
+	stroke-width: 1px;
+}
+
+.st1{
+	display:none;
+}
+
+#varna {
+	fill: red;
+}
+
+#message {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  padding: 0 1em;
+  z-index: 100000;
+  overflow: hidden;
+}
+
+/*------------ REGIONS ------------------------*/
+.region-name {
+	color: #333;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+.locations-container>li>p {
+	font-size: .8em;
+}
+
+#varna {
+	display: none;
+	height: 23.5em;
+	overflow-y: auto;
+}
+
+#burgas {
+	display: none;
+	height: 23.5em;
+	overflow-y: auto;
+}
+
+.region {
+	display: none;
+	height: 23.5em;
+	overflow-y: auto;
+}
